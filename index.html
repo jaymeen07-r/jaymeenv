@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=memory" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<style>
+    * {
+        font-family: agency fb;
+    }
+
+    body {
+        background-color: rgb(48, 51, 70);
+        height: 500%;
+    }
+
+    #line-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 99vw;
+        height: 453vh;
+        pointer-events: none;
+        z-index: 15;
+        background-color: transparent;
+    }
+
+    #home {
+        position: fixed;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(48, 51, 70);
+        color: white;
+        border: 2px solid white;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 25;
+    }
+
+    #projects {
+        position: fixed;
+        top: 5%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(48, 51, 70);
+        color: white;
+        border: 2px solid white;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 25;
+    }
+
+    #skills {
+        position: fixed;
+        top: 5%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(48, 51, 70);
+        color: white;
+        border: 2px solid white;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 25;
+    }
+
+    #about {
+        position: fixed;
+        top: 5%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(48, 51, 70);
+        color: white;
+        border: 2px solid white;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 25;
+    }
+
+    #contact {
+        position: fixed;
+        top: 5%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(48, 51, 70);
+        color: white;
+        border: 2px solid white;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 25;
+    }
+
+    #main-slogan {
+        position: absolute;
+        top: 30%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 50px;
+        z-index: 20;
+    }
+
+    #main-slogan-span {
+        color: rgb(147, 98, 255);
+    }
+
+    #home:hover,
+    #skills:hover,
+    #projects:hover,
+    #about:hover,
+    #contact:hover {
+        color: rgb(147, 98, 255);
+        border-color: rgb(147, 98, 255);
+        font-size: 20px;
+        transition: 0.3s;
+    }
+
+    #main-slogan2 {
+        position: absolute;
+        top: 47%;
+        left: 23.5%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 20px;
+        z-index: 20;
+    }
+
+    #sectionx {
+        position: absolute;
+        top: 60%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 400px;
+        height: 40px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #main-slogan3 {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid white;
+        width: 720px;
+        height: 60px;
+        background-color: transparent;
+        color: white;
+        font-size: 35px;
+        z-index: 20;
+    }
+
+    #main-slogan3-1 {
+        position: absolute;
+        top: 78.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 26px;
+        z-index: 21;
+    }
+
+    #main-slogan4 {
+        position: absolute;
+        top: 88.3%;
+        left: 65.8%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 300px;
+        height: 50px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #main-slogan4:hover,
+    #project:hover,
+    #myskill:hover,
+    #aboutme:hover,
+    #contactme:hover,
+    #main-slogan3-1:hover {
+        color: rgb(147, 98, 255);
+        transition: 0.3s;
+    }
+
+    #project {
+        position: absolute;
+        top: 110%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 40px;
+        z-index: 25;
+    }
+
+    #section2-project-1-1 {
+        position: absolute;
+        top: 140%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        background-image: url('evomate.png');
+        border: 2px solid white;
+        width: 350px;
+        height: 220px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #section2-project-2-1 {
+        position: absolute;
+        top: 140%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('tuf1.png');
+        border: 2px solid white;
+        width: 350px;
+        height: 220px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #section2-project-3-1 {
+        position: absolute;
+        top: 140%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        background-image: url('vasu.png');
+        border: 2px solid white;
+        width: 350px;
+        height: 220px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #section2-project-1-2 {
+        position: absolute;
+        top: 158.2%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 350px;
+        height: 100px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #section2-project-2-2 {
+        position: absolute;
+        top: 158.2%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 350px;
+        height: 100px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #section2-project-3-2 {
+        position: absolute;
+        top: 158.2%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 350px;
+        height: 100px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #section2-project-4-1 {
+        position: absolute;
+        top: 180%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        background-image: url('portfolio.png');
+        border: 2px solid white;
+        width: 350px;
+        height: 220px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #section2-project-4-2 {
+        position: absolute;
+        top: 198.2%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 350px;
+        height: 100px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #section2-project-5-1 {
+        position: absolute;
+        top: 180%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('evomateweb.png');
+        border: 2px solid white;
+        width: 350px;
+        height: 220px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #section2-project-5-2 {
+        position: absolute;
+        top: 198.2%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 350px;
+        height: 100px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #section2-project-6-1 {
+        position: absolute;
+        top: 185.5%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px dashed white;
+        width: 350px;
+        height: 320px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+
+    #myskill {
+        position: absolute;
+        top: 223.3%;
+        left: 16.5%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 40px;
+        z-index: 25;
+    }
+
+    #skillbox1-2 {
+        position: absolute;
+        top: 251.4%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 300px;
+        height: 150px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #skillbox1-1 {
+        position: absolute;
+        top: 240%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 300px;
+        height: 50px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #skill1title {
+        position: absolute;
+        top: 236.5%;
+        left: 77%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 21;
+    }
+
+    #skill1p {
+        position: absolute;
+        top: 249%;
+        left: 79.5%;
+        transform: translate(-50%, -50%);
+        color: rgb(209, 208, 208);
+        font-size: 20px;
+        z-index: 21;
+        word-spacing: 10px;
+    }
+
+    #skillbox2-1 {
+        position: absolute;
+        top: 267%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 300px;
+        height: 50px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #skillbox2-2 {
+        position: absolute;
+        top: 276.6%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 300px;
+        height: 120px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #skill2title {
+        position: absolute;
+        top: 263.5%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 21;
+    }
+
+    #skill2p {
+        position: absolute;
+        top: 274%;
+        left: 78%;
+        transform: translate(-50%, -50%);
+        color: rgb(209, 208, 208);
+        font-size: 20px;
+        z-index: 21;
+        word-spacing: 10px;
+    }
+
+    #skillbox3-1 {
+        position: absolute;
+        top: 240%;
+        left: 57%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 350px;
+        height: 50px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #skillbox3-2 {
+        position: absolute;
+        top: 248.4%;
+        left: 57%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 350px;
+        height: 100px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #skill3title {
+        position: absolute;
+        top: 236.5%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 21;
+    }
+
+    #skill3p {
+        position: absolute;
+        top: 246%;
+        left: 57%;
+        transform: translate(-50%, -50%);
+        color: rgb(209, 208, 208);
+        font-size: 20px;
+        z-index: 21;
+        word-spacing: 10px;
+    }
+
+    #skillbox4-1 {
+        position: absolute;
+        top: 260%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 250px;
+        height: 50px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #skillbox4-2 {
+        position: absolute;
+        top: 269.6%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 250px;
+        height: 120px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #skill4title {
+        position: absolute;
+        top: 256.5%;
+        left: 56%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 21;
+    }
+
+    #skill4p {
+        position: absolute;
+        top: 267.5%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        color: rgb(209, 208, 208);
+        font-size: 20px;
+        z-index: 21;
+        word-spacing: 10px;
+    }
+
+    #skillbox5-1 {
+        position: absolute;
+        top: 260%;
+        left: 42.4%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 271px;
+        height: 50px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #skillbox5-2 {
+        position: absolute;
+        top: 269.6%;
+        left: 42.4%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 271px;
+        height: 120px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #skill5title {
+        position: absolute;
+        top: 256.5%;
+        left: 37%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 21;
+    }
+
+    #skill5p {
+        position: absolute;
+        top: 267%;
+        left: 42.5%;
+        transform: translate(-50%, -50%);
+        color: rgb(209, 208, 208);
+        font-size: 20px;
+        z-index: 21;
+        word-spacing: 10px;
+    }
+
+    #skillbox6-1 {
+        position: absolute;
+        top: 238.4%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 300px;
+        height: 50px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #skillbox6-2 {
+        position: absolute;
+        top: 248%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 300px;
+        height: 120px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #skill6title {
+        position: absolute;
+        top: 235%;
+        left: 33.5%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 21;
+    }
+
+    #skill6p {
+        position: absolute;
+        top: 245.3%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+        color: rgb(209, 208, 208);
+        font-size: 20px;
+        z-index: 21;
+        word-spacing: 10px;
+    }
+
+    #skillbox7-1 {
+        position: absolute;
+        top: 281%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 700px;
+        height: 50px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #skillbox7-2 {
+        position: absolute;
+        top: 288.8%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 700px;
+        height: 90px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #skill7title1 {
+        position: absolute;
+        top: 277.6%;
+        left: 24.5%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 21;
+    }
+
+    #skill7title2 {
+        position: absolute;
+        top: 277.6%;
+        left: 59%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 21;
+    }
+
+    #skill7p1 {
+        position: absolute;
+        top: 286.5%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+        color: rgb(209, 208, 208);
+        font-size: 20px;
+        z-index: 21;
+        word-spacing: 10px;
+    }
+
+    #skill7p2 {
+        position: absolute;
+        top: 286.5%;
+        left: 57%;
+        transform: translate(-50%, -50%);
+        color: rgb(209, 208, 208);
+        font-size: 20px;
+        z-index: 21;
+        word-spacing: 10px;
+        text-align: right;
+    }
+
+
+    #skill1title:hover,
+    #skill2title:hover,
+    #skill3title:hover,
+    #skill4title:hover,
+    #skill5title:hover,
+    #skill6title:hover,
+    #skill7title1:hover,
+    #skill7title2:hover {
+        color: rgb(147, 98, 255);
+        transition: 0.3s;
+    }
+
+
+    #aboutme {
+        position: absolute;
+        top: 300%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 40px;
+        z-index: 25;
+    }
+
+    #medetails1 {
+        position: absolute;
+        top: 313%;
+        left: 19.8%;
+        transform: translate(-50%, -50%);
+        color: rgb(209, 208, 208);
+        font-size: 22px;
+        z-index: 20;
+    }
+
+    #medetails2 {
+        position: absolute;
+        top: 317%;
+        left: 16.2%;
+        color: rgb(209, 208, 208);
+        font-size: 22px;
+        width: 450px;
+        z-index: 20;
+    }
+
+    #medetails3 {
+        position: absolute;
+        top: 334%;
+        left: 16.2%;
+        color: rgb(209, 208, 208);
+        font-size: 22px;
+        width: 450px;
+        z-index: 20;
+    }
+
+    #medetails4 {
+        position: absolute;
+        top: 352%;
+        left: 16.2%;
+        color: rgb(209, 208, 208);
+        font-size: 22px;
+        width: 350px;
+        z-index: 20;
+    }
+
+    #medetails5 {
+        position: absolute;
+        top: 357%;
+        left: 18%;
+        color: rgb(209, 208, 208);
+        font-size: 22px;
+        z-index: 20;
+    }
+
+    #medetails6 {
+        position: absolute;
+        top: 362%;
+        left: 16.2%;
+        color: rgb(209, 208, 208);
+        font-size: 22px;
+        z-index: 20;
+    }
+
+    #medetails7 {
+        position: absolute;
+        top: 367%;
+        left: 18%;
+        color: rgb(209, 208, 208);
+        font-size: 22px;
+        z-index: 20;
+    }
+
+    #medetails8 {
+        position: absolute;
+        top: 372%;
+        left: 18%;
+        color: rgb(209, 208, 208);
+        font-size: 22px;
+        z-index: 20;
+    }
+
+    #contactme {
+        position: absolute;
+        top: 390%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 40px;
+        z-index: 25;
+    }
+
+    #contactme-p {
+        position: absolute;
+        top: 400%;
+        left: 16.2%;
+        color: rgb(209, 208, 208);
+        font-size: 22px;
+        width: 350px;
+        z-index: 20;
+    }
+
+    #contactme-box {
+        position: absolute;
+        top: 410%;
+        left: 77%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 230px;
+        height: 150px;
+        background-size: cover;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #contactme1-a {
+        position: absolute;
+        top: 411%;
+        left: 76.7%;
+        transform: translate(-50%, -50%);
+        color: rgb(209, 208, 208);
+        font-size: 20px;
+        z-index: 21;
+        text-decoration: none;
+    }
+
+    #contactme2-a {
+        position: absolute;
+        top: 415%;
+        left: 77%;
+        transform: translate(-50%, -50%);
+        color: rgb(209, 208, 208);
+        font-size: 20px;
+        z-index: 21;
+        text-decoration: none;
+    }
+
+    #contactme1-a:hover,
+    #contactme2-a:hover {
+        color: rgb(255, 255, 255);
+        transition: 0.3s;
+    }
+
+    #hr1 {
+        position: absolute;
+        top: 425%;
+        width: 99%;
+        border: 1px solid white;
+        z-index: 20;
+    }
+
+    #media {
+        position: absolute;
+        top: 428%;
+        left: 78%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 20;
+    }
+
+    #footeridea2-1 {
+        position: absolute;
+        top: 428%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 25px;
+        z-index: 20;
+    }
+
+    #footeridea1 {
+        position: absolute;
+        top: 3.55%;
+        left: 17%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 25px;
+        z-index: 25;
+    }
+
+    #hr2 {
+        position: absolute;
+        top: 446%;
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid white;
+        z-index: 20;
+    }
+
+    #footerslogen {
+        position: absolute;
+        top: 448.3%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 20px;
+        z-index: 20;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .material-symbols-outlined {
+        color: rgb(147, 98, 255);
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+    }
+
+    #idea-img1 {
+        position: absolute;
+        top: 6%;
+        left: 12%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        z-index: 25;
+        cursor: default;
+    }
+
+    #idea-img2 {
+        position: absolute;
+        top: 430.3%;
+        left: 13.5%;
+        transform: translate(-50%, -50%);
+        font-size: 29px;
+        z-index: 20;
+        cursor: default;
+    }
+
+    #footeridea2-2 {
+        position: absolute;
+        top: 433%;
+        left: 26.6%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 25px;
+        z-index: 20;
+    }
+
+    #media:hover,
+    #media-1:hover,
+    #media-2:hover,
+    #media-3:hover {
+        color: rgb(147, 98, 255);
+        transition: 0.3s;
+    }
+
+    #media-1 {
+        position: absolute;
+        top: 436%;
+        left: 77%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 20;
+    }
+
+    #media-2 {
+        position: absolute;
+        top: 436.1%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 20;
+    }
+
+    #media-3 {
+        position: absolute;
+        top: 436%;
+        left: 83%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 20;
+    }
+
+    #messageme-1 {
+        position: absolute;
+        top: 401.5%;
+        left: 77%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 21;
+    }
+
+    #photocutterhr {
+        position: absolute;
+        top: 360%;
+        left: 60%;
+        width: 400px;
+        border: 2px solid rgb(147, 98, 255);
+        z-index: 21;
+    }
+
+    #projecthr {
+        position: absolute;
+        top: 113.5%;
+        left: 23%;
+        width: 350px;
+        border: 1.5px solid rgb(255, 255, 255);
+        z-index: 25;
+    }
+
+    #skillhr {
+        position: absolute;
+        top: 226.5%;
+        left: 20%;
+        width: 400px;
+        border: 1.5px solid rgb(255, 255, 255);
+        z-index: 25;
+    }
+
+    #abouthr {
+        position: absolute;
+        top: 303.5%;
+        left: 23%;
+        width: 350px;
+        border: 1.5px solid rgb(255, 255, 255);
+        z-index: 25;
+    }
+
+
+    #contacthr {
+        position: absolute;
+        top: 393.5%;
+        left: 23%;
+        width: 350px;
+        border: 1.5px solid rgb(255, 255, 255);
+        z-index: 25;
+    }
+
+    #section2-project-1-2-title {
+        position: absolute;
+        top: 152%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 21;
+    }
+
+    #section2-project-1-2-explore {
+        position: absolute;
+        top: 160.5%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 80px;
+        height: 30px;
+        background-size: cover;
+        cursor: pointer;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    #section2-project-2-2-title {
+        position: absolute;
+        top: 152%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 21;
+    }
+
+    #section2-project-2-2-explore {
+        position: absolute;
+        top: 160.5%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 80px;
+        height: 30px;
+        background-size: cover;
+        cursor: pointer;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    #section2-project-3-2-title {
+        position: absolute;
+        top: 152%;
+        left: 73%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 21;
+    }
+
+    #section2-project-3-2-explore {
+        position: absolute;
+        top: 160.5%;
+        left: 68%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 80px;
+        height: 30px;
+        background-size: cover;
+        cursor: pointer;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    #section2-project-4-2-title {
+        position: absolute;
+        top: 192%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 21;
+    }
+
+    #section2-project-4-2-explore {
+        position: absolute;
+        top: 200.5%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 80px;
+        height: 30px;
+        background-size: cover;
+        cursor: pointer;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    #section2-project-5-2-title {
+        position: absolute;
+        top: 192%;
+        left: 47.7%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        z-index: 21;
+    }
+
+    #section2-project-5-2-explore {
+        position: absolute;
+        top: 200.5%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: 2px solid white;
+        width: 80px;
+        height: 30px;
+        background-size: cover;
+        cursor: pointer;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+
+    #section2-project-1-2-explore:hover,
+    #section2-project-2-2-explore:hover,
+    #section2-project-3-2-explore:hover,
+    #section2-project-4-2-explore:hover,
+    #section2-project-5-2-explore:hover {
+        color: rgb(147, 98, 255);
+        border-color: rgb(147, 98, 255);
+        transition: 0.3s;
+    }
+
+    #hader-bg {
+        position: fixed;
+        top: 0;
+        left: 6.5%;
+        width: 87%;
+        height: 10%;
+        background-color: rgb(48, 51, 70);
+        background-size: cover;
+        z-index: 24;
+        border: none;
+    }
+
+    #mephoto {
+        position: absolute;
+        top: 302%;
+        left: 54.5%;
+        width: 600px;
+        z-index: 20;
+    }
+
+    #moreforproject {
+        position: absolute;
+        top: 174.5%;
+        left: 74%;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 20;
+        color: #ffffff;
+        font-size: 60px;
+    }
+
+    #section2-project-6-1 a,
+    #moreforproject a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #mainme {
+        position: absolute;
+        top: 8.5%;
+        left: 54%;
+        width: 500px;
+        border-radius: 10px;
+        z-index: 19;
+    }
+
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 30;
+        font-size: 1.5rem;
+        background-color: rgb(48, 51, 70, 0.9);
+    }
+
+    /* Popup box */
+    .popup {
+        background: white;
+        padding: 25px 35px;
+        border-radius: 10px;
+        text-align: center;
+        animation: popIn 0.3s ease;
+        border: 2px solid black;
+    }
+
+    @keyframes popIn {
+        from {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .popup button {
+        margin-top: 15px;
+        background: #ff5252;
+        width: 100px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .popup button:hover {
+        background: #e84141;
+    }
+</style>
+
+<body>
+
+    <div class="popup-overlay" id="popupOverlay" onclick="closeOutside(event)">
+        <div class="popup">
+            <h2>Hello Developer</h2>
+            <p>This site is on Development due-tu some Update, For check full side take access from JAYMEEN or Try Again
+                Letter<br>Send
+                message for take Access</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    <button id="hader-bg"></button>
+    <img id="mainme" src="me.png" alt="Jaymeen N. Vaghela">
+    <svg id="line-overlay" xmlns="http://www.w3.org/2000/svg">
+        <line x1="6%" y1="0%" x2="6%" y2="8%" stroke="#ffffff" stroke-width="2" />
+        <line x1="95%" y1="15%" x2="100%" y2="15%" stroke="#ffffff" stroke-width="2" />
+        <line x1="95%" y1="18.5%" x2="100%" y2="18.5%" stroke="#ffffff" stroke-width="2" />
+        <line x1="95%" y1="15%" x2="95%" y2="18.5%" stroke="#ffffff" stroke-width="2" />
+        <line x1="0%" y1="60%" x2="5%" y2="60%" stroke="#ffffff" stroke-width="2" />
+        <line x1="0%" y1="63.5%" x2="5%" y2="63.5%" stroke="#ffffff" stroke-width="2" />
+        <line x1="5%" y1="60%" x2="5%" y2="63.5%" stroke="#ffffff" stroke-width="2" />
+    </svg>
+    <h3><button id="home" class="links-x" onclick="location.href='#line-overlay'">Home</button></h3>
+    <h3><button id="projects" class="links-x" onclick="location.href='#project'">Projects</button></h3>
+    <h3><button id="skills" class="links-x" onclick="location.href='#myskill'">Skills</button></h3>
+    <h3><button id="about" class="links-x" onclick="location.href='#aboutme'">About</button></h3>
+    <h3><button id="contact" class="links-x" onclick="location.href='#contactme'">Contact</button></h3>
+    <h1 id="main-slogan">Jaymeen is a <span id="main-slogan-span">web designer</span>,<br>and <span
+            id="main-slogan-span">full-stack developer</span>.</h1>
+    <h1 id="main-slogan2">I'm An Engineering Mind With A Designer's Soul.</h1>
+    <button id="sectionx">Founder Of EVOMATE</button>
+    <fieldset id="main-slogan3">
+        <legend>///</legend>
+    </fieldset>
+    <p id="main-slogan3-1">Explore more about Jaymeen's work and passion by scrolling down this portfolio page.</p>
+    <button id="main-slogan4"> — JAYMEEN N. VAGHELA</button>
+    <h2 id="project">Projects</h2>
+    <button id="section2-project-1-1"></button>
+    <p id="section2-project-1-2-title">EVOMATE - OS builder</p>
+    <button id="section2-project-1-2"></button>
+    <a href="https://jaymeen07-r.github.io/EVOMATE/" target="blank"><button
+            id="section2-project-1-2-explore">EXPLORE</button></a>
+    <button id="section2-project-2-1"></button>
+    <p id="section2-project-2-2-title">SCIFOTATOR - TUF LAUNCHER</p>
+    <button id="section2-project-2-2"></button>
+    <button id="section2-project-2-2-explore" onclick="openPopup()">EXPLORE</button>
+    <button id="section2-project-3-1"></button>
+    <p id="section2-project-3-2-title">VASU - Virtual Assistant</p>
+    <button id="section2-project-3-2"></button>
+    <button id="section2-project-3-2-explore" onclick="openPopup()">EXPLORE</button>
+    <button id="section2-project-4-1"></button>
+    <p id="section2-project-4-2-title">Portfolio</p>
+    <button id="section2-project-4-2"></button>
+    <a href="http://127.0.0.1:5501/portfolio/index.html"><button id="section2-project-4-2-explore">EXPLORE</button></a>
+    <button id="section2-project-5-1"></button>
+    <p id="section2-project-5-2-title">EVOMATE - Tools Builder</p>
+    <button id="section2-project-5-2"></button>
+    <a href="https://www.figma.com/make/5iId69ZvbYYJ7euStGSvxk/Generate-Design-Elements?node-id=0-1&p=f&t=dym9PCZrYz1Ykvdw-0&fullscreen=1"
+        target="_blank"><button id="section2-project-5-2-explore">EXPLORE</button></a>
+    <a id="moreprojectsection" target="_blank" href="https://github.com/jaymeen07-r/"><button
+            id="section2-project-6-1"></button></a>
+
+
+    <h2 id="myskill">Skills</h2>
+    <button id="skillbox1-1"></button>
+    <p id="skill1title">Backend & Database</p>
+    <button id="skillbox1-2"></button>
+    <p id="skill1p">Node.js + Express.js<br>MongoDB / Firebase / MySQL<br>Authentication (JWT, Firebase Auth)<br>API
+        Integration & Cloud Deployment<br>(Vercel, Render, AWS)</p>
+    <button id="skillbox2-1"></button>
+    <p id="skill2title">Frontend Frameworks & Tools</p>
+    <button id="skillbox2-2"></button>
+    <p id="skill2p">React.js Next.js<br>Tailwind CSS / Bootstrap<br>Figma to Code Implementation<br>Framer Motion</p>
+    <button id="skillbox3-1"></button>
+    <p id="skill3title">AI & Productivity Tools</p>
+    <button id="skillbox3-2"></button>
+    <p id="skill3p">ChatGPT / OpenAI API Integration<br>Automation using Python or JavaScript<br>Prompt Engineering &
+        API-driven Workflows</p>
+    <button id="skillbox4-1"></button>
+    <p id="skill4title">Core Skills</p>
+    <button id="skillbox4-2"></button>
+    <p id="skill4p">HTML5 CSS3 JavaScript(ES6+)<br>Responsive Design<br>Version Control<br>RESTful APIs<br>JSON / Fetch
+        / Axios</p>
+    <button id="skillbox5-1"></button>
+    <p id="skill5title">Soft Skills</p>
+    <button id="skillbox5-2"></button>
+    <p id="skill5p">Problem Solving<br>Communication | Team Collaboration<br>Time Management<br>Creative Thinking</p>
+    <button id="skillbox6-1"></button>
+    <p id="skill6title">Deployment / Cloud Skills</p>
+    <button id="skillbox6-2"></button>
+    <p id="skill6p">Vercel / Netlify / Render<br>Firebase Hosting & Functions<br>GitHub Pages<br>Domain & SSL
+        Configuration</p>
+    <button id="skillbox7-1"></button>
+    <p id="skill7title1">Design & UX</p>
+    <p id="skill7title2">Development Tools</p>
+    <button id="skillbox7-2"></button>
+    <p id="skill7p1">Figma / Adobe XD / Canva<br>Wireframing & Prototyping <br> Domain & SSL
+        Configuration</p>
+    <p id="skill7p2">VS Code / GitHub / Postman<br>Browser DevTools Debugging <br> Docker (Basic)</p>
+
+    <h2 id="aboutme">About Me</h2>
+    <p id="medetails1">Hi! I'm Jaymeen,</p>
+    <p id="medetails2">I'm an passionate web designer and full-stack developer with a knack for creating
+        stunning and functional digital experiences. With a background in engineering and a designer's soul, I blend
+        technical expertise with creative flair to bring ideas to life on the web.</p>
+    <p id="medetails3">I'm currently pursuing my Bachelor of Engineering in Computer Engineering. I am the Founder of
+        EVOMATE, where I channel my passion for technology into building innovative
+        solutions that drive meaningful impact. I always strive to learn about the newest technologies and frameworks.
+    </p>
+    <p id="medetails4">Location : </p>
+    <p id="medetails5">Ahmedabad, Gujrat.</p>
+    <p id="medetails6">Education : </p>
+    <p id="medetails7">B.E. in Computer Engineering</p>
+    <p id="medetails8">VSITR , Vidush Somany Institute of Technology And Research, Gandhinagar (2024 - 2028)</p>
+
+
+    <h2 id="contactme">Contact</h2>
+    <p id="contactme-p">I'm always open to freelance opportunities, collaborations, or full-time roles where I can
+        contribute to
+        innovative projects. Feel free to drop a message, I'll respond as soon as possible.</p>
+    <button id="contactme-box"></button>
+    <p id="messageme-1">Message Me On :</p>
+    <a id="contactme1-a" href="https://wa.me/+919601429218" target="_blank">+91 - 9601429218</a>
+    <a id="contactme2-a" href="mailto:jaymeenvaghela07@gmail.com" target="_blank">
+        jaymeenvaghela07@gmail.com</a>
+    <hr id="hr1">
+    <h2 id="media">Media :</h2>
+    <span id="idea-img1" class="material-symbols-outlined">memory</span>
+    <span id="idea-img2" class="material-symbols-outlined">memory</span>
+    <h2 id="footeridea1">JAYMEEN</h2>
+    <h2 id="footeridea2-1">JAYMEEN</h2>
+    <h2 id="footeridea2-2">Web Developer, Full-Stack and Mobile Developer.</h2>
+    <a href="https://github.com/jaymeen07-r/" id="media-1" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/jaymeen-vaghela-a50649377/" id="media-3" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/jaymeen_vaghela_264/" id="media-2" target="_blank"><i
+            class="fab fa-instagram"></i></a>
+    <hr id="hr2">
+    <h2 id="footerslogen">// © Copyright 2025. Developed by Jaymeen Vaghela \\</h2>
+    <hr id="photocutterhr">
+    <hr id="projecthr">
+    <hr id="skillhr">
+    <hr id="abouthr">
+    <hr id="contacthr">
+    <img src="me.png" alt="Jaymeen Vaghela" id="mephoto">
+    <p id="moreforproject"><a id="moreprojectsection" target="_blank" href="https://github.com/jaymeen07-r/">+</a></p>
+
+</body>
+
+<script>
+    function openPopup() {
+        document.getElementById('popupOverlay').style.display = 'flex';
+    }
+
+    function closePopup() {
+        document.getElementById('popupOverlay').style.display = 'none';
+    }
+
+    function closeOutside(event) {
+        if (event.target.id === 'popupOverlay') {
+            closePopup();
+        }
+    }
+</script>
+
+</html>
